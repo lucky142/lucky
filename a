@@ -1,0 +1,7 @@
+#!/bin/bash
+VAR=$1
+RUN=`/usr/bin/whoami`
+if [ "$RUN" != 'root' ]; then
+  echo " you must be a root user "
+  exit
+fi

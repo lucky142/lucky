@@ -1,0 +1,7 @@
+#!/bin/bash
+if [ -r "/etc/shadow" ];then
+ echo " wehave read permissions "
+else
+ echo " you seems to be nrml user "
+ exit
+fi 
